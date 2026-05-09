@@ -1,0 +1,11 @@
+#######################################
+# Funktions-Keywords (werden in Orange dargestellt)
+#######################################
+addWakeupPin	KEYWORD2
+clearWakeupPins	KEYWORD2
+beginTimerWakeup	KEYWORD2
+configurePowerDomains	KEYWORD2
+holdGPIO	KEYWORD2
+releaseAllHolds	KEYWORD2
+wakeupCause	KEYWORD2
+goDeepSleep	KEYWORD2
