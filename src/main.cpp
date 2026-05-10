@@ -71,8 +71,8 @@
 #define FP_TIMEOUT -2
 #define FP_ERROR -3
 
-// Datenstrukturen
-struct SensorMessage {
+// Datenstrukturen (mit Packing für binäre Kompatibilität)
+struct __attribute__((packed)) SensorMessage {
   uint8_t type;
   float temperature;
   float humidity;
@@ -84,7 +84,7 @@ struct SensorMessage {
   uint32_t messageCounter; 
 };
 
-struct FingerEvent {
+struct __attribute__((packed)) FingerEvent {
   uint8_t type = 99;
   uint8_t fingerID;
   uint8_t confidence;
