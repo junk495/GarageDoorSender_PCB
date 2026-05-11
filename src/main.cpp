@@ -183,6 +183,7 @@ float getNormalizedZAngle() {
 }
 
 void readAndPrintSensorData() {
+  delay(200);
   float temp = bme.readTemperature();
   float hum = bme.readHumidity();
   temp += BME_TEMP_OFFSET_C;
@@ -210,6 +211,7 @@ void readAndPrintSensorData() {
 }
 
 void sendSensorData(uint8_t messageType, uint8_t cause) {
+  delay(200);
   float temp = bme.readTemperature();
   float hum = bme.readHumidity();
   temp += BME_TEMP_OFFSET_C;
