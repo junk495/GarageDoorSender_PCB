@@ -183,7 +183,7 @@ float getNormalizedZAngle() {
 }
 
 void readAndPrintSensorData() {
-  delay(200);
+  delay(600);
   float temp = bme.readTemperature();
   float hum = bme.readHumidity();
   temp += BME_TEMP_OFFSET_C;
@@ -290,7 +290,7 @@ void setup() {
   pinMode(FP_POWER, OUTPUT);
   Esp32C3_DeepSleep::releaseAllHolds();
   digitalWrite(FP_POWER, LOW);
-  delay(200);
+  delay(600);
 
   initEspNow();
   Wire.begin(I2C_SDA, I2C_SCL);
